@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:background="#EDEFF2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/intent_image"
+            android:padding="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shengdanlaoren"
+            />
+
+        <TextView
+            android:textColor="#000000"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:id="@+id/intent_title"
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/intent_image"
+            android:text="全国最大的护理南我给精雕机都是煎熬辅爱是极好的附加按房间卡萨"
+            android:textSize="18dp"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:textColor="#969696"
+            android:id="@+id/item_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="作者:"
+            android:layout_below="@+id/intent_title"
+            android:paddingTop="10dp"
+            android:paddingLeft="25dp"
+            />
+        <TextView
+            android:textColor="#969696"
+            android:id="@+id/intent_author_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_author"
+            android:layout_marginLeft="30dp"
+            android:text="我就是我"
+            />
+
+        <TextView
+            android:textColor="#969696"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/intent_title"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="9dp"
+            android:layout_toRightOf="@+id/item_author"
+            android:id="@+id/item_class"
+            android:text="分类：" />
+        <TextView
+            android:textColor="#969696"
+            android:id="@+id/intent_class_name"
+            android:maxLines="1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_class"
+            android:layout_toRightOf="@+id/intent_author_name"
+            android:text="大型溪谷类延庆他"
+
+            android:layout_marginLeft="20dp"
+            />
+
+        <TextView
+            android:textColor="#969696"
+            android:id="@+id/item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/item_class"
+            android:layout_below="@+id/intent_title"
+            android:paddingTop="8dp"
+            android:layout_marginLeft="40dp"
+            android:text="时间:" />
+        <TextView
+            android:textColor="#969696"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_time"
+            android:layout_toRightOf="@id/intent_class_name"
+            android:layout_marginLeft="10dp"
+            android:text="2019-10-24"
+            android:id="@+id/intent_time_name"
+            />
+
+        <TextView
+            android:id="@+id/intent_more"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+           android:layout_toRightOf="@+id/item_time"
+            android:layout_below="@+id/intent_title"
+          />
+        <TextView
+            android:layout_below="@id/intent_time_name"
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+    </RelativeLayout>
+</LinearLayout>

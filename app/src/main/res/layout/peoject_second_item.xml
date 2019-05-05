@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:background="#FFF"
+    android:layout_margin="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/project_second_phone"
+        android:layout_margin="10dp"
+        android:layout_width="100dp"
+        android:layout_height="180dp"
+
+        />
+    <ImageView
+        android:id="@+id/project_second_img"
+        android:padding="15dp"
+        android:layout_toRightOf="@+id/project_second_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shengdanlaoren"
+        />
+    <TextView
+        android:id="@+id/project_second_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="玩android开源课目详细介绍"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_toRightOf="@+id/project_second_img"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:id="@+id/project_second_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/project_second_img"
+        android:text="我就我我啊 宝贝阿斯顿空撒打算打"
+        android:layout_toRightOf="@id/project_second_phone"
+        android:padding="20dp"
+        />
+    <TextView
+        android:id="@+id/project_second_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="时间"
+        android:layout_toRightOf="@id/project_second_phone"
+        android:layout_below="@+id/project_second_text"
+        android:paddingLeft="20dp"
+        />
+    <TextView
+        android:id="@+id/project_second_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="作者"
+        android:layout_toRightOf="@id/project_second_time"
+        android:layout_below="@id/project_second_text"
+        android:layout_marginLeft="10dp"
+        />
+
+</RelativeLayout>
+</LinearLayout>

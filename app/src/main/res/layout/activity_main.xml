@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#EDEFF2">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/toubu"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#007FFF"
+
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:id="@+id/head_image"
+
+            android:src="@drawable/qiqi"
+            />
+        <TextView
+            android:id="@+id/head_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的首页"
+            android:textColor="#FFF"
+            android:textSize="18dp"
+            android:layout_centerInParent="true"
+            />
+    <ImageView
+        android:id="@+id/main_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sousuo"
+        android:layout_alignParentRight="true"
+        android:padding="15dp"
+        />
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:layout_marginTop="60dp"
+        android:id="@+id/wan_main_fra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+
+        >
+
+        <TextView
+            android:id="@+id/wan_main_f"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/item_shou"
+            android:gravity="center"
+            android:paddingTop="6dp"
+            android:text="首页"
+            android:textColor="@drawable/item_text"
+            android:textSize="8dp"
+
+            />
+
+        <TextView
+            android:id="@+id/wan_main_s"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/item_zhi"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="知识系统"
+            android:textColor="@drawable/item_text"
+            android:textSize="8dp" />
+
+        <TextView
+            android:id="@+id/wan_main_t"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/item"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="导航"
+            android:textColor="@drawable/item_text"
+            android:textSize="8dp" />
+
+        <TextView
+            android:id="@+id/wan_main_e"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/item_xaing"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="项目"
+            android:textColor="@drawable/item_text"
+            android:textSize="8dp" />
+    </LinearLayout>
+</RelativeLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/huadong"
+        app:headerLayout="@layout/headlayout"
+        />
+</android.support.v4.widget.DrawerLayout>
